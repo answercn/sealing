@@ -1,4 +1,9 @@
 spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
   datasource:
     druid:
       url: jdbc:mysql://13.58.87.174:3306/spcloud
