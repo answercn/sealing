@@ -2,12 +2,12 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://10.237.170.42:3306/sealing?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
-    username: admin
-    password: Pr0d1234
-    #url: jdbc:mysql://localhost:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
-    #username: answer
-    #password: 123456
+    #url: jdbc:mysql://10.237.170.42:3306/sealing?allowMultiQueries=true&useUnicode=true&characterEncoding=utf-8&useSSL=true
+    #username: admin
+    #password: Pr0d1234
+    url: jdbc:mysql://localhost:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: answer
+    password: 123456
     #com.mysql.cj.jdbc.Driver
     driver-class-name: com.mysql.jdbc.Driver
     # 下面为连接池的补充设置，应用到上面所有数据源中
@@ -28,8 +28,8 @@ spring:
     # 打开PSCache，并且指定每个连接上PSCache的大小
     poolPreparedStatements: true
     maxPoolPreparedStatementPerConnectionSize: 20
-    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
-    filters: stat,wall,slf4j
+    # 配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙，,wall,slf4j
+    filters: stat
     # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
     # 合并多个DruidDataSource的监控数据
