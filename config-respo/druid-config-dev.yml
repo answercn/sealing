@@ -2,12 +2,12 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    #url: jdbc:mysql://10.237.170.159:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
-    #username: admin
-    #password: Pr0d1234
-    url: jdbc:mysql://localhost:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
-    username: answer
-    password: 123456
+    url: jdbc:mysql://10.237.170.159:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    username: admin
+    password: Pr0d1234
+    #url: jdbc:mysql://localhost:3306/sealing?useUnicode=true&characterEncoding=utf-8&useSSL=true
+    #username: answer
+    #password: 123456
     #com.mysql.cj.jdbc.Driver
     driverClassName: com.mysql.jdbc.Driver
     # 下面为连接池的补充设置，应用到上面所有数据源中
